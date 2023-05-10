@@ -1,7 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { AiOutlineHeatMap, AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
+import { FaMapMarkerAlt } from 'react-icons/fa';
+import { Menu } from '@headlessui/react'
+import { HouseContext } from './HouseContext';
+
 
 const CountryDropdown = () => {
-  return <div>CountryDropdown</div>;
+  const { country, setCountry, countries } = useContext(HouseContext);
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <Menu as='div' className="dropdown relative">
+      <Menu.Button onClick={() => setIsOpen(!isOpen)} className='dropdown-btn w-full text-left'>
+        <FaMapMarkerAlt className='dropdown-icon-primary'></FaMapMarkerAlt>
+        <div>
+          <div className='text-[15px] font-medium leading-tight'>{country}</div>
+          <div className='text-[13px]'>Select your place</div>
+        </div>
+        {
+          isOpen ? (
+            <AiOutlineArrowUp className='dropdown-icon-secondary'></AiOutlineArrowUp>
+          ) : (
+            <AiOutlineArrowDown className='dropdown-icon-secondary'></AiOutlineArrowDown>
+          )
+        }
+      </Menu.Button>
+      <Menu.Items className='dropdown-menu'>
+        {
+          countries.map((country, index) => {
+            return (
+              <Menu.Item
+                onClick={() => setCountry(country)}
+                as='li'
+                className='cursor-pointer hover:text-violet-700 transition'
+                key={index}>
+                {country}
+              </Menu.Item>
+            )
+          })}
+      </Menu.Items>
+    </Menu>
+  );
 };
 
 export default CountryDropdown;
