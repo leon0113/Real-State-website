@@ -435,19 +435,19 @@ export const housesData = [
   },
   {
     id: 19,
-    type: 'WareHouse',
+    type: 'Flat',
     name: 'Apartament 19',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
     image: Apartment6,
     imageLg: Apartment6Lg,
     country: 'Bangladesh',
-    address: '84 Woodland St. Cocoa, FL 32925',
+    address: '1053/3 East Monipur Road, Mirpur-2',
     bedrooms: '3',
-    bathrooms: '1',
+    bathrooms: '2',
     surface: '1200 sq ft',
     year: '2010',
-    price: '38000',
+    price: '400000',
     agent: {
       image: Agent6,
       name: 'Leon',
