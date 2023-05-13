@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { AiFillHome, AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
-// import { FaMapMarkerAlt } from 'react-icons/fa';
 import { Menu } from '@headlessui/react'
 import { HouseContext } from './HouseContext';
 
