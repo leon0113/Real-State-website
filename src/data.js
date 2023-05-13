@@ -433,4 +433,25 @@ export const housesData = [
       phone: '0123 456 78910',
     },
   },
+  {
+    id: 19,
+    type: 'WareHouse',
+    name: 'Apartament 19',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illoat. Repudiandae ratione impedit delectus consectetur. Aspernaturvero obcaecati placeat ab distinctio unde ipsam molestias atqueratione delectus blanditiis nemo eius dignissimos doloremque quaealiquid maiores id tempore consequatur, quod pariatur saepe.',
+    image: Apartment6,
+    imageLg: Apartment6Lg,
+    country: 'Bangladesh',
+    address: '84 Woodland St. Cocoa, FL 32925',
+    bedrooms: '3',
+    bathrooms: '1',
+    surface: '1200 sq ft',
+    year: '2010',
+    price: '38000',
+    agent: {
+      image: Agent6,
+      name: 'Leon',
+      phone: '0123 456 78910',
+    },
+  },
 ];
